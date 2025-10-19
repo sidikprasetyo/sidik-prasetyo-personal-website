@@ -183,7 +183,7 @@ export default function HomePage() {
         <div className="hidden lg:block absolute left-29 top-58 bottom-0 w-px h-88 bg-gray-300 animate-slide-in-bottom delay-300" />
 
         {/* Content */}
-        <div className="flex-1 flex flex-col justify-center relative lg:-top-10 lg:pl-50 md:pl-8 md:-top-15 pl-0 z-10">
+        <div className="flex-1 flex flex-col justify-center relative lg:-top-10 lg:pl-50 md:pl-8 -top-10 md:-top-15 pl-0 z-10">
           {/* Info numbers (optional) */}
           {/* <div className="flex gap-10 text-sm text-gray-500 mb-15 initial-hidden animate-fade-in-up delay-200">
             <div>
@@ -197,7 +197,7 @@ export default function HomePage() {
           </div> */}
 
           {/* Mobile/Tablet: Role and Year at top */}
-          <div className="lg:hidden flex justify-between items-center mb-6 md:mb-4 text-gray-500 text-xs md:text-sm tracking-widest -pt-20 md:pt-20">
+          <div className="lg:hidden flex justify-between items-center mb-6 md:mb-4 text-gray-500 text-xs md:text-sm tracking-widest pt-0 md:pt-20">
             <span>Fullstack Developer</span>
             <div className="flex-1 h-px bg-gray-300 animate-slide-in-right delay-200 mx-2"></div>
             <span>{year}</span>
