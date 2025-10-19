@@ -197,7 +197,7 @@ export default function HomePage() {
           </div> */}
 
           {/* Mobile/Tablet: Role and Year at top */}
-          <div className="lg:hidden flex justify-between items-center mb-6 md:mb-4 text-gray-500 text-xs md:text-sm tracking-widest pt-0 md:pt-20">
+          <div className="lg:hidden flex justify-between items-center mb-6 md:mb-4 text-gray-500 text-xs md:text-sm tracking-widest -pt-20 md:pt-20">
             <span>Fullstack Developer</span>
             <div className="flex-1 h-px bg-gray-300 animate-slide-in-right delay-200 mx-2"></div>
             <span>{year}</span>
