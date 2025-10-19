@@ -169,7 +169,7 @@ export default function HomePage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section id="#hero" className="relative flex flex-col lg:flex-row min-h-[91vh] bg-[#f3f3f3] text-black px-6 md:px-8 lg:px-12">
+      <section id="#hero" className="relative flex flex-col lg:flex-row lg:min-h-[91vh] bg-[#f3f3f3] text-black px-6 md:px-8 lg:px-12">
         {/* Left vertical line with text */}
         <div className="hidden lg:flex absolute left-10 top-30 bottom-18 flex flex-col justify-between items-center text-gray-500 animate-fade-in-left animate-pulse-custom">
           {/* Role */}
@@ -183,7 +183,7 @@ export default function HomePage() {
         <div className="hidden lg:block absolute left-29 top-58 bottom-0 w-px h-88 bg-gray-300 animate-slide-in-bottom delay-300" />
 
         {/* Content */}
-        <div className="flex-1 flex flex-col justify-center relative lg:-top-10 lg:pl-50 md:pl-8 -top-15 md:-top-15 pl-0 z-10">
+        <div className="flex-1 flex flex-col justify-center relative lg:-top-10 lg:pl-50 md:pl-8  md:-top-15 pl-0 z-10">
           {/* Info numbers (optional) */}
           {/* <div className="flex gap-10 text-sm text-gray-500 mb-15 initial-hidden animate-fade-in-up delay-200">
             <div>
@@ -219,7 +219,7 @@ export default function HomePage() {
         {/* Tablet: Photo di samping, lebih compact */}
         <div className="hidden md:flex lg:hidden flex-1 justify-center items-end initial-hidden animate-fade-in-right delay-500 pb-40">
           <div className="relative group w-full max-w-[400px]">
-            <div className="absolute -inset-1 bg-gradient-to-r from-gray-600 to-gray-400 rounded-t-lg blur opacity-25"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-gray-600 to-gray-400 rounded-t-lg blur opacity-75"></div>
             <img src="/heropic.png" alt="Profile" className="relative w-full h-auto object-cover object-top rounded-t-lg" />
           </div>
         </div>
@@ -227,7 +227,7 @@ export default function HomePage() {
         {/* Mobile: Photo lebih kecil dan centered */}
         <div className="md:hidden flex justify-center items-center initial-hidden animate-fade-in-up delay-400 mt-auto pb-20">
           <div className="relative group w-full max-w-[280px]">
-            <div className="absolute -inset-1 bg-gradient-to-r from-gray-600 to-gray-400 rounded-lg blur opacity-25"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-gray-600 to-gray-400 rounded-lg blur opacity-75"></div>
             <img src="/heropic.png" alt="Profile" className="relative w-full h-auto object-cover rounded-lg" />
           </div>
         </div>
