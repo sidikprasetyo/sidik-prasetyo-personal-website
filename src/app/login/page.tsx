@@ -35,7 +35,7 @@ export default function LoginPage() {
     const { error } = await supabase.auth.signInWithOAuth({
       provider: 'google',
       options: {
-        redirectTo: `https://sidik-prasetyo.vercel.app/admin`,
+        redirectTo: `${window.location.origin}/admin`,
       },
     })
     if (error) {
