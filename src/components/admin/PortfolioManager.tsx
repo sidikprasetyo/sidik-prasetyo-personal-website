@@ -203,11 +203,11 @@ export default function PortfolioManager() {
           <DialogTrigger asChild>
             <Button className="bg-blue-600 hover:bg-blue-700">+ Add Portfolio</Button>
           </DialogTrigger>
-          <DialogContent className="max-w-lg">
+          <DialogContent className="max-w-lg max-h-[90vh]">
             <DialogHeader>
               <DialogTitle className="text-lg font-bold">Add Portfolio</DialogTitle>
             </DialogHeader>
-            <div className="space-y-4">
+            <div className="space-y-4 overflow-y-auto pr-2">
               <div>
                 <Input placeholder="Title" value={title} onChange={(e) => setTitle(e.target.value)} />
                 {errors.title && <p className="text-red-500 text-sm">{errors.title}</p>}
@@ -275,11 +275,11 @@ export default function PortfolioManager() {
                   <Pencil size={16} />
                 </button>
               </DialogTrigger>
-              <DialogContent className="max-w-lg">
+              <DialogContent className="max-w-lg max-h-[90vh]">
                 <DialogHeader>
                   <DialogTitle className="text-lg font-bold">Edit Portfolio</DialogTitle>
                 </DialogHeader>
-                <div className="space-y-4">
+                <div className="space-y-4 overflow-y-auto pr-2">
                   <div>
                     <Input value={title} onChange={(e) => setTitle(e.target.value)} />
                     {errors.title && <p className="text-red-500 text-sm">{errors.title}</p>}
