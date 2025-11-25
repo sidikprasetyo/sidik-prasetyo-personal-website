@@ -9,9 +9,10 @@ export async function GET() {
       title,
       excerpt,
       link,
-      portfolio_images ( image_url )
+      portfolio_images ( image_url ),
+      created_at
     `)
-    .order("id", { ascending: false });
+    .order("created_at", { ascending: false });
 
   if (error) {
     return NextResponse.json({ error: error.message }, { status: 500 });

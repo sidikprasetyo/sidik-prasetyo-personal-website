@@ -400,8 +400,7 @@ export default function HomePage() {
           {/* Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10" data-aos="fade-in">
             {portfolios
-              ?.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime()) // urutkan terbaru dulu
-              .slice(0, 3) // ambil 3 item terakhir
+              ?.slice(0, 3) // ambil 3 item terakhir
               .map((portfolio) => (
                 <Link key={portfolio.id} href={`/portfolio/${portfolio.id}`} className="group relative transition-shadow duration-300" data-aos="flip-left">
                   <div className="relative overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-500">
